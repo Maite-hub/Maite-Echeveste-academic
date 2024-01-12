@@ -7,21 +7,28 @@
         body {
             display: flex;
             justify-content: space-between;
-            background-color: #f0f8ea; /* Light green color */
-            margin: 0; /* Remove default margin */
-            padding: 20px; /* Add some padding for better appearance */
+            background-color: #f0f8ea;
+            margin: 0;
+            padding: 20px;
         }
 
         .content {
             width: 45%;
-            background-color: white; /* Background color for the content area */
-            padding: 20px; /* Add padding to the content area */
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width */
         }
 
         .text-content {
-            width: 45%; /* Adjust as needed */
-            background-color: white; /* Background color for the text area */
-            padding: 20px; /* Add padding to the text area */
+            width: 45%;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width */
+        }
+
+        .contact-details {
+            font-size: 14px;
+            margin-top: 20px; /* Add some spacing */
         }
     </style>
     <title>Maite Echeveste</title>
@@ -34,6 +41,16 @@
     <p><small>I have recently completed my PhD in Astronomy at the Universidad Nacional de La Plata, Argentina.<br>
     My research has centered on the theoretical study of interacting binary systems, <br>
     with a particular emphasis on modeling low-mass X-ray binaries and blue stragglers.</small></p>
+
+    <div class="contact-details">
+        <p>Email: maite@example.com</p>
+        <p>Phone: +123 456 789</p>
+        <!-- Add more contact details as needed -->
+    </div>
+</div>
+
+<div class="content">
+    <img src="IMG-20230620-WA0001.jpg" alt="Maite's Picture" width="300" height="400"> 
     <ol>
         <li><a href="CV_inglés.pdf" target="_blank">CV</a></li>
         <li><a href="TesisDoctoral_Echeveste.pdf" target="_blank">PhD thesis</a></li>
@@ -41,10 +58,5 @@
     </ol>
 </div>
 
-<div class="content">
-    <img src="IMG-20230620-WA0001.jpg" alt="Maite's Picture" width="300" height="400"> 
-</div>
-
 </body>
 </html>
-
